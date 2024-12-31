@@ -64,14 +64,14 @@ if __name__ == "__main__":
     SMTP_PORT = 587
 
     # Sender details
-    SENDER_EMAIL = os.getenv('EMAIL_ADDRESS', 'a.bhavana.krishnan@gmail.com')
+    SENDER_EMAIL = os.getenv('EMAIL_ADDRESS', 'sender@gmail.com')
     SENDER_NAME = 'Bhavana Krishnan'
-    APP_PASSWORD = os.getenv('EMAIL_APP_PASSWORD', 'tjuh bczu bznb irkt')
+    APP_PASSWORD = os.getenv('EMAIL_APP_PASSWORD', 'your_app_password')
 
     # Recipients and placeholders
     RECIPIENTS = [
-        {'email': 'bhavana9811@gmail.com', 'placeholders': {'name': 'TinTin'}},
-        {'email': 'n.v.saikiran@gmail.com', 'placeholders': {'name': 'Snowy'}}
+        {'email': 'receiver1@gmail.com', 'placeholders': {'name': 'TinTin'}},
+        {'email': 'receiver2@gmail.com', 'placeholders': {'name': 'Snowy'}}
     ]
     SUBJECT = 'Sending email through script'
 
